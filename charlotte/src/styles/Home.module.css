@@ -1,0 +1,12 @@
+.main {
+  padding: 6rem;
+  background-color: rgb(191, 155, 155);
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  background-color: rgb(231, 224, 224);
+}
