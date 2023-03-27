@@ -18,6 +18,9 @@ export default function Projects() {
   return (
     <>
       <h2 className={styles.projects}>Projects</h2>
+      <a className={styles.icons} href="https://github.com/chasju?tab=repositories">
+        <i class="fa-brands fa-github"></i>
+      </a>
       <div className={styles.wrapper}>
         <div className={styles.splide}>
           <Splide options={options}>

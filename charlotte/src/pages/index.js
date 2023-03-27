@@ -2,6 +2,7 @@ import Head from "next/head";
 import Me from "@/components/Me";
 import styles from "@/styles/Home.module.css";
 import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <main className={styles.main}>
         <Me />
         <Projects />
+        <Contact />
       </main>
     </>
   );

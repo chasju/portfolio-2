@@ -74,6 +74,43 @@
   -webkit-filter: blur(0);
 }
 
+@media (max-width: 860px) {
+  .rectangle {
+    display: none;
+  }
+
+  .textContainer {
+    margin-bottom: 3rem;
+  }
+
+  .image {
+    height: unset;
+    width: 200px;
+    align-self: flex-start;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+  }
+}
+
+@media (max-width: 655px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image {
+    align-self: center;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 451px) {
+  .main {
+    padding: 0;
+  }
+}
+
 .wrapper {
   overflow-x: hidden;
   max-width: 700px;
@@ -105,8 +142,27 @@
   width: 100px;
 }
 
-.projects {
+.iconContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.projects,
+.icons {
   font-size: 3rem;
   text-align: center;
   margin-top: 5rem;
+}
+
+.icons {
+  padding: 1rem;
+  color: #252525;
+  display: block;
+  margin-top: 0;
+  transition: all 0.3s ease;
+}
+
+.icons:hover {
+  color: rgba(155, 115, 116, 0.7);
 }
