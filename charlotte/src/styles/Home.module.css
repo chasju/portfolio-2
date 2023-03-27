@@ -74,6 +74,10 @@
   -webkit-filter: blur(0);
 }
 
+.padding {
+  padding: 0 1rem;
+}
+
 @media (max-width: 860px) {
   .rectangle {
     display: none;

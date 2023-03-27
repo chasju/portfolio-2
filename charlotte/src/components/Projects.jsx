@@ -19,7 +19,7 @@ export default function Projects() {
     <>
       <h2 className={styles.projects}>Projects</h2>
       <a className={styles.icons} href="https://github.com/chasju?tab=repositories">
-        <i class="fa-brands fa-github"></i>
+        <i className="fa-brands fa-github"></i>
       </a>
       <div className={styles.wrapper}>
         <div className={styles.splide}>
@@ -30,7 +30,7 @@ export default function Projects() {
                   <div className={styles.slide}>
                     <div className={styles.card}>
                       <img src={slide.image} className={styles.slideImage} />
-                      <span>{slide.text}</span>
+                      <span className={styles.padding}>{slide.text}</span>
                     </div>
                   </div>
                 </a>

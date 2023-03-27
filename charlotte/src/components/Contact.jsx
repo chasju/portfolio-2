@@ -6,10 +6,10 @@ export default function Contact() {
       <h2 className={styles.projects}>Contact</h2>
       <div className={styles.iconContainer}>
         <a className={styles.icons} href="https://www.linkedin.com/in/charlottesjusdal/">
-          <i class="fa-brands fa-linkedin"></i>
+          <i className="fa-brands fa-linkedin"></i>
         </a>
         <a className={styles.icons} href="mailto:charlotte.sjusdal@hotmail.com">
-          <i class="fa-solid fa-envelope"></i>
+          <i className="fa-solid fa-envelope"></i>
         </a>
       </div>
     </>
