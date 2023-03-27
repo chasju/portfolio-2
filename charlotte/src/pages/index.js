@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Me from "@/components/Me";
 import styles from "@/styles/Home.module.css";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Me />
+        <Projects />
       </main>
     </>
   );

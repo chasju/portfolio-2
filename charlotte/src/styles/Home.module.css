@@ -13,6 +13,10 @@
   gap: 1rem;
 }
 
+.navLink:hover {
+  text-decoration: underline;
+}
+
 .container {
   display: flex;
   gap: 2rem;
@@ -68,4 +72,41 @@
 .container:hover .image {
   filter: blur(0);
   -webkit-filter: blur(0);
+}
+
+.wrapper {
+  overflow-x: hidden;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgba(155, 115, 116, 0.7);
+  color: white;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.card:hover {
+  background-color: rgba(155, 115, 116, 1);
+}
+
+.slideImage {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  width: 100px;
+}
+
+.projects {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5rem;
 }

@@ -6,13 +6,10 @@ export default function Nav() {
     <div>
       <nav>
         <ul className={styles.nav}>
-          <li>
+          <li className={styles.navLink}>
             <Link href="/">HI/HOME</Link>
           </li>
-          <li>
-            <Link href="/projects">CHARLOTTE/PROJECTS</Link>
-          </li>
-          <li>
+          <li className={styles.navLink}>
             <Link href="/goodbye">GOODBYE</Link>
           </li>
         </ul>
