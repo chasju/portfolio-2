@@ -9,9 +9,9 @@ const options = {
 };
 
 const slides = [
-  { image: "findNo.png", text: "Auction website", id: "1", link: "https://auction-chasju.netlify.app/" },
-  { image: "jupiter.png", text: "Jupiter website", id: "2", link: "https://allthingsjupiter.netlify.app/" },
-  { image: "squareEyes.png", text: "Fictional streaming website", id: "3", link: "https://square-eyes-chasju.netlify.app/" },
+  { image: "storeIt.png", text: "React Store website", id: "1", link: "https://storeit-chasju.netlify.app" },
+  { image: "findNo.png", text: "Auction Website", id: "2", link: "https://auction-chasju.netlify.app/" },
+  { image: "squareEyes.png", text: "Fictional Streaming Website", id: "3", link: "https://square-eyes-chasju.netlify.app/" },
 ];
 
 export default function Projects() {

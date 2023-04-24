@@ -76,6 +76,7 @@
 
 .padding {
   padding: 0 1rem;
+  text-align: center;
 }
 
 @media (max-width: 860px) {
