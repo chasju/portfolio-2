@@ -1,6 +1,8 @@
 import "@splidejs/react-splide/css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import styles from "@/styles/Home.module.css";
+import cardStyles from "@/styles/Card.module.css";
+import Card from "./Card";
 
 const options = {
   perPage: 2,
@@ -9,9 +11,9 @@ const options = {
 };
 
 const slides = [
-  { image: "storeIt.png", text: "React Store website", id: "1", link: "https://storeit-chasju.netlify.app" },
-  { image: "findNo.png", text: "Auction Website", id: "2", link: "https://auction-chasju.netlify.app/" },
-  { image: "squareEyes.png", text: "Fictional Streaming Website", id: "3", link: "https://square-eyes-chasju.netlify.app/" },
+  { image: "holidaze.png", text: "Book A Stay Website", id: "1", link: "https://holidaze-chasju.netlify.app/", gitHub: "https://github.com/chasju/holidaze", description: "A book stay at a venue website, where people can register an account, create their own venues and book a stay at other people's venues." },
+  { image: "storeit.png", text: "React Store website", id: "2", link: "https://storeit-chasju.netlify.app", gitHub: "https://github.com/chasju/react-store", description: "An online store website, where users can add products to their cart and finally checkout their cart." },
+  { image: "auction.png", text: "Auction Website", id: "3", link: "https://auction-chasju.netlify.app/", gitHub: "https://github.com/chasju/auction", description: "An auction website, where people can register an account, create their own listings and bid on other people's listings." },
 ];
 
 export default function Projects() {
@@ -21,23 +23,11 @@ export default function Projects() {
       <a className={styles.icons} href="https://github.com/chasju?tab=repositories">
         <i className="fa-brands fa-github"></i>
       </a>
-      <div className={styles.wrapper}>
-        <div className={styles.splide}>
-          <Splide options={options}>
-            {slides.map((slide) => (
-              <SplideSlide key={slide.id}>
-                <a href={slide.link} className={styles.link}>
-                  <div className={styles.slide}>
-                    <div className={styles.card}>
-                      <img src={slide.image} className={styles.slideImage} />
-                      <span className={styles.padding}>{slide.text}</span>
-                    </div>
-                  </div>
-                </a>
-              </SplideSlide>
-            ))}
-          </Splide>
-        </div>
+      <p className={cardStyles.scroll}>Scrooooooooooooll to see more projects</p>
+      <div className={cardStyles.container}>
+        {slides.map((slide) => {
+          return <Card key={slide.id} slide={slide} />;
+        })}
       </div>
     </>
   );
